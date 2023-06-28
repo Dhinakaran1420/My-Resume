@@ -110,17 +110,17 @@ const resumeData = {
     {
       name: "School Attendance Management",
       description: "mobileapp",
-      imgurl: "images/portfolio/phone.jpg",
+      imgurl: "images/portfolio/coffee.jpg",
     },
     {
       name: "Saloon App",
       description: "mobileapp",
-      imgurl: "images/portfolio/project.jpg",
+      imgurl: "images/portfolio/farmerboy.jpg",
     },
     {
       name: "Aviar Tracker Management",
       description: "Website",
-      imgurl: "images/portfolio/project2.png",
+      imgurl: "images/portfolio/retrocam.jpg",
     },
     // {
     //   name: "project4",
