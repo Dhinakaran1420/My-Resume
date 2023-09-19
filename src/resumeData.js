@@ -41,7 +41,7 @@ const resumeData = {
   linkedinId: "https://www.linkedin.com/in/dhinakaran-palani-8ba4bb246/",
   skypeid: "Your skypeid",
   roleDescription:
-    "I enjoy exploring various parts of frontend development and like to learn about new technologies, write technical articles, or simply play games in my free time.",
+    "I enjoy exploring various parts of frontend development and like to learn about new technologies or simply play games in my free time.",
   socialLinks: [
     {
       name: "linkedin",
