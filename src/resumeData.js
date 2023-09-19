@@ -1,37 +1,36 @@
-import { useState } from "react";
+// Set the desired date
+const desiredDate = new Date("2022-09-28");
 
-// // Set the desired date
-// const desiredDate = new Date("2022-09-28");
+// Get the current date
+const currentDate = new Date();
 
-// // Get the current date
-// const currentDate = new Date();
+// Calculate the difference in milliseconds
+const diffInMilliseconds = Math.abs(currentDate - desiredDate);
 
-// // Calculate the difference in milliseconds
-// const diffInMilliseconds = Math.abs(currentDate - desiredDate);
+// Calculate the number of years, months, and days
+const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
+const months = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 30));
+const days = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
 
-// // Calculate the number of years, months, and days
-// const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
-// const months = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 30));
-// const days = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
+// Adjust the months and days based on the remaining duration
+const adjustedMonths = months % 12;
+const adjustedDays = days % 30;
 
-// // Adjust the months and days based on the remaining duration
-// const adjustedMonths = months % 12;
-// const adjustedDays = days % 30;
+// Format the experience string
+let experience = "";
+console.log("eppp" + experience)
 
-// // Format the experience string
-// let experience = "";
+if (years > 0) {
+  experience += years === 1 ? "1 year " : `${years} years `;
+}
 
-// if (years > 0) {
-//   experience += years === 1 ? "1 year " : `${years} years `;
-// }
+if (adjustedMonths > 0) {
+  experience += adjustedMonths === 1 ? "1 month " : `${adjustedMonths} months `;
+}
 
-// if (adjustedMonths > 0) {
-//   experience += adjustedMonths === 1 ? "1 month " : `${adjustedMonths} months `;
-// }
-
-// if (adjustedDays > 0) {
-//   experience += adjustedDays === 1 ? "1 day " : `${adjustedDays} days`;
-// }
+if (adjustedDays > 0) {
+  experience += adjustedDays === 1 ? "1 day " : `${adjustedDays} days`;
+}
 
 
 
@@ -77,8 +76,8 @@ const resumeData = {
     {
       CompanyName: "Aviar Technology Services",
       specialization: "Software Developer",
-      "Date of Joining": "28-Sep-2022",
-      Experience: "9 months",
+      DateofJoining: "28-Sep-2022",
+      Experience: experience,
     },
   ],
   skillsDescription: "Your skills here",
