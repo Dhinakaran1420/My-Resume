@@ -77,7 +77,7 @@ const resumeData = {
       CompanyName: "Aviar Technology Services",
       specialization: "Software Developer",
       DateofJoining: "28-Sep-2022",
-      Experience: experience,
+      Experience: '1 Years',
     },
   ],
   skillsDescription: "Your skills here",
